@@ -1,0 +1,547 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+#container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f7f8f8;
+}
+
+#header {
+  min-height: 500px;
+  width: 100%;
+  border: solid 1px solid transparent;
+  background-image: url("treatment.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  padding-top: 30px;
+  display: flex;
+  position: relative;
+}
+
+#logo {
+  float: left;
+  margin-right: 530px;
+}
+
+#navi {
+  list-style: none;
+}
+
+#navi li {
+  display: inline;
+  margin-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#navi li a {
+  color: #f7f8f8;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#navi li a:hover {
+  color: #8CD2D1;
+}
+
+.header-content {
+  position: absolute;
+  top: 64%;
+  right: 57%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 1px;
+  color: #f7f8f8;
+  margin-top: 100px;
+}
+
+.button-wrapper h4 {
+  font-size: 20px;
+  color: #8CD2D1;
+  margin-right: 990px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button-wrapper h4::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.button-wrapper h4:hover::after {
+  opacity: 1;
+  background-color: #161D6F;
+}
+
+.button-wrapper h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button-wrapper h4:hover a {
+  text-decoration: none;
+  color: #161D6F;
+}
+
+#main {
+  border: solid 0px transparent;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 1100px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.maintext {
+  margin-top: 5px;
+  color: #6A6A72;
+  white-space: normal;
+}
+
+h2 {
+  font-size: 40px;
+  color: #161D6F;
+}
+
+#beha {
+  border: solid 0px transparent;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 1100px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#medi {
+  border: solid 0px transparent;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 1100px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.behatext,
+.meditext {
+  margin-top: 5px;
+  color: #6A6A72;
+  white-space: normal;
+}
+
+#stimu {
+  border: solid 0px transparent;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 1100px;
+  width: 30%;
+  padding-right: 785px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: -40px;
+}
+
+h5 {
+  text-align: left;
+  font-size: 23px;
+  white-space: nowrap;
+  color: #161D6F;
+  margin-left: 23px;
+}
+
+.stimutext {
+  color: #6A6A72;
+  white-space: normal;
+  text-align: left;
+}
+
+#nonstimu {
+  border: solid 0px transparent;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+  max-width: 1100px;
+  width: 40%;
+  padding-right: 750px;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.nonstimutext {
+  color: #6A6A72;
+  white-space: normal;
+  text-align: left;
+}
+
+#card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 730px;
+  margin-top: -200px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-color: #D7ECF5;
+  border-left-color: #161D6F;
+  border-left-width: 4px;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+.card-header {
+  background-color: aliceblue;
+  color: #161D6F;
+  padding: 8px 10px;
+  font-weight: 550;
+}
+
+.card-body {
+  margin-left: 10px;
+}
+
+.card-text {
+  color: #6A6A72;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.btnn {
+  background-color: #8CD2D1;
+  border-radius: 10px;
+  border-color: #f7f8f8;
+  color: #f7f8f8;
+  padding: 6px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 13px;
+  margin-right: 160px;
+  margin-bottom: 25px;
+}
+
+.btnn:hover {
+  background-color: #161D6F;
+}
+
+#footer {
+  margin-top: 80px;
+  height: 230px;
+  width: 100%;
+  background-color: #A9D6D5;
+  display: block;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.form-floating.mb-3 {
+  margin-left: 5px;
+}
+
+.form-control {
+  margin-right: 80px;
+  border-color: #C7FFD8;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 6px 15px;
+}
+
+.btnnn {
+  background-color: #C7FFD8;
+  border-radius: 10px;
+  border-color: #f7f8f8;
+  color: #161D6F;
+  padding: 6px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 550;
+  margin-top: 13px;
+}
+
+.btnnn:hover {
+  background-color: #161D6F;
+  color: #f7f8f8;
+}
+
+#foot {
+  background-color: #161D6F;
+  width: 100%;
+  color: #f7f8f8;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#navii {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#navii li {
+  margin-left: 20px;
+}
+
+#navii li:first-child {
+  margin-left: 0;
+}
+
+#navii li a {
+  color: #f7f8f8;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-left: 30px;
+}
+
+#navii li a:hover {
+  color: #8CD2D1;
+}
+
+.foot p {
+  margin: 0;
+  line-height: 1;
+}
+
+.foot p:not(:last-child) {
+  margin-right: 650px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    min-height: 400px;
+  }
+
+  #logo {
+    margin-right: 0;
+	margin-left: 40px;
+  }
+
+  .header-title {
+    font-size: 50px;
+  }
+
+ .header-content {
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+
+.button-wrapper {
+    margin-top: 10px;
+	width: 100%;
+  }
+	
+.button-wrapper h4 {
+    font-size: 18px;
+  }
+	
+ #beha {
+    padding-top: 60px;
+	margin-right: 10px;
+  }
+	
+  #medi {
+    padding-top: 60px;
+  }
+	
+ #main {
+    padding-top: 60px;
+	width: 95%;
+  }
+
+  .maintext {
+    margin-right: 50;
+    margin-left: 50;
+  }
+	
+#stimu {
+    padding-left: 0px;
+    padding-right: 160px;
+  }
+	
+  #nonstimu{
+    padding-left: 20px;
+    padding-right: 130px;
+  }
+	
+  .foot {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #navii li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .foot p:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 650px;
+  }
+	
+   #card {
+    padding-left: 0;
+	margin-top: -15px;
+  }
+  
+   .card {
+    width: 100%;
+  }
+	
+   .form-control {
+     margin-left: 70px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+  .foot p:not(:last-child) {
+    margin-right: 20px; /* 使用较小的间距 */
+  }
+ 
+  #stimu,
+  #nonstimu{
+   margin-left: auto;
+   margin-right: auto;
+  }
+}
+	
+@media screen and (max-width: 480px) {
+  #header {
+    min-height: 300px;
+  }
+
+  .header-title {
+    font-size: 40px;
+  }
+
+  .header-content {
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+  }
+
+.button-wrapper h4 {
+    font-size: 16px; 
+    margin-right: 60; 
+    margin-top: 10px; 
+	width: 50%;
+  }
+
+  #beha {
+    padding-top: 80px;
+    padding-bottom: 20px;
+	width: 95%;
+	margin-left: -15px;
+  }
+	
+  #medi {
+    padding-top: 80px;
+    padding-bottom: 20px;
+	width: 95%;
+	margin-left: -5px;
+  }
+	
+  #main {
+    padding-top: 80px;
+    padding-bottom: 20px;
+	width: 92%;
+  }
+	
+  #stimu {
+    padding-left: 10px;
+	width: 85%;
+  }
+  
+   #nonstimu{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+	
+   #footer {
+	padding-bottom: 80px;
+	}
+}
